@@ -1,8 +1,12 @@
+import { CartWidget } from "./CartWidget";
+
 export const NavBar = (props) => {
     return(
-        <div className="navBar">
-        <img src="../img/logo-gray.jpg" alt="" className="logo"/>
-        <h1>Adicto Tattoo</h1>
+    <div className="navBar">
+        <h1>
+            <img src="../img/logo-gray.jpg" alt="" className="logo"/>
+            <p>Adicto Tattoo</p>
+            </h1>
         <nav>
             <ul className="listaNav">
                 <li>
@@ -14,9 +18,11 @@ export const NavBar = (props) => {
                 <li>
                     <a href="">{props.productos} </a>
                 </li>
+                <li>
+                    <CartWidget />
+                </li>
             </ul>
         </nav>
-        <a href="" className="cartIcon"><img src="../../img/cart.png" alt="" /></a>
-        </div>
+    </div>
     )
 };

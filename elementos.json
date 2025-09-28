@@ -1,0 +1,207 @@
+[
+    {
+        "nombre":"Piercing tragus",
+        "costo":10000,
+        "img":"./img/tragus.jpg",
+        "id":1
+        
+    },
+        {
+        "nombre":"Piercing daith",
+        "costo":10500,
+        "img":"./img/daith.jpg",
+        "id":2
+    },
+        {
+        "nombre":"Piercing forward helix",
+        "costo":10500,
+        "img":"./img/forward.jpg",
+        "id":3
+    },
+        {
+        "nombre":"Piercing rook",
+        "costo":10500,
+        "img":"./img/rook.jpg",
+        "id":4
+    },
+        {
+        "nombre":"Piercing flat",
+        "costo":10000,
+        "img":"./img/flat.jpg",
+        "id":5
+    },
+        {
+        "nombre":"Piercing industrial",
+        "costo":12000,
+        "img":"./img/industrial.jpg",
+        "id":6
+    },
+        {
+        "nombre":"Piercing helix",
+        "costo":10000,
+        "img":"./img/helix.jpg",
+        "id":7
+    },
+        {
+        "nombre":"Piercing snug",
+        "costo":10000,
+        "img":"./img/snug.jpg",
+        "id":8
+    },
+        {
+        "nombre":"Piercing conch",
+        "costo":10000,
+        "img":"./img/conch.jpg",
+        "id":9
+    },
+        {
+        "nombre":"Piercing anti tragus",
+        "costo":10000,
+        "img":"./img/antitragus.jpg",
+        "id":10
+    },
+        {
+        "nombre":"Piercing lóbulo",
+        "costo":7000,
+        "img":"./img/lobulo.jpg",
+        "id":11
+    },
+        {
+        "nombre":"Piercing dahlia",
+        "costo":10000,
+        "img":"./img/dahlia.jpg",
+        "id":12
+    },
+        {
+        "nombre":"Piercing madonna",
+        "costo":10000,
+        "img":"./img/madonna.jpg",
+        "id":13
+    },
+        {
+        "nombre":"Piercing smiley",
+        "costo":10000,
+        "img":"./img/smiley.jpg",
+        "id":14
+    },
+        {
+        "nombre":"Piercing medusa",
+        "costo":10000,
+        "img":"./img/medusa.jpg",
+        "id":15
+    },
+        {
+        "nombre":"Piercing monroe",
+        "costo":10000,
+        "img":"./img/monroe.jpg",
+        "id":16
+    },
+        {
+        "nombre":"Piercing tounge",
+        "costo":15000,
+        "img":"./img/tounge.jpg",
+        "id":17
+    },
+        {
+        "nombre":"Piercing labret",
+        "costo":10000,
+        "img":"./img/labret.jpg",
+        "id":18
+    },
+        {
+        "nombre":"Piercing snake bites",
+        "costo":16000,
+        "img":"./img/snakebites.jpg",
+        "id":19
+    },
+        {
+        "nombre":"Piercing eyebrow",
+        "costo":10000,
+        "img":"./img/eyebrow.jpg",
+        "id":20
+    },
+        {
+        "nombre":"Piercing bridge",
+        "costo":11000,
+        "img":"./img/bridge.jpg",
+        "id":21
+    },
+        {
+        "nombre":"Piercing surface",
+        "costo":30000,
+        "img":"./img/surface.jpg",
+        "id":22
+    },
+        {
+        "nombre":"Piercing nostril",
+        "costo":10000,
+        "img":"./img/nostril.jpg",
+        "id":23
+    },
+        {
+        "nombre":"Piercing septum",
+        "costo":11000,
+        "img":"./img/septum.jpg",
+        "id":24
+    },
+        {
+        "nombre":"Piercing microdermal",
+        "costo":30000,
+        "img":"./img/microdermal.jpg",
+        "id":25
+    },
+        {
+        "nombre":"Piercing cheek",
+        "costo":20000,
+        "img":"./img/cheek.jpg",
+        "id":26
+    },
+        {
+        "nombre":"Tattoo Anime",
+        "costo":100000,
+        "img":"./img/anime.jpg",
+        "id":27
+    },
+        {
+        "nombre":"Tattoo neo-tribal",
+        "costo":80000,
+        "img":"./img/neotribal.jpg",
+        "id":28
+    },
+        {
+        "nombre":"Tattoo cybersigilism",
+        "costo":120000,
+        "img":"./img/cybersigilism.jpg",
+        "id":29
+    },
+        {
+        "nombre":"Tattoo full color",
+        "costo":150000,
+        "img":"./img/fullcolor.jpg",
+        "id":30
+    },
+        {
+        "nombre":"Tattoo tribal",
+        "costo":120000,
+        "img":"./img/tribal.jpg",
+        "id":31
+    },
+        {
+        "nombre":"Black work",
+        "costo":80000,
+        "img":"./img/blackwork.jpg",
+        "id":32
+    },
+        {
+        "nombre":"Black and grey",
+        "costo":90000,
+        "img":"./img/byg.jpg",
+        "id":33
+    },
+        {
+        "nombre":"Tattoo lineal",
+        "costo":25000,
+        "img":"./img/lineal.jpg",
+        "id":34
+    }
+]
