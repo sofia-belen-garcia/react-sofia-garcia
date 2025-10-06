@@ -1,5 +1,11 @@
-export const ItemListContainer = (props) => {
+export const ItemListContainer = (props, children) => {
+    
     return(
-        <h3>{props.mensaje}</h3>
+        <>
+        <div>
+            <h3>{props.mensaje}</h3>
+            {children}
+        </div>
+        </>
     )
 };
