@@ -1,3 +1,5 @@
 export const CartWidget = () => {
-    return         <a href="" className="cartIcon"><img src="../../img/cartWhite.png" alt="" className="cartImg" /></a>
+    return(
+    <img src="../../img/cart.png" alt="" className="cartImg" />
+)
 };

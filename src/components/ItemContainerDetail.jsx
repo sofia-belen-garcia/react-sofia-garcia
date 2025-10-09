@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"; 
-import elementos from "../../public/elementos.json"
+import data from "../../public/elementos.json"
 import { useParams } from "react-router-dom";
 
 export const ItemContainerDetail = () => {
@@ -10,7 +10,7 @@ export const ItemContainerDetail = () => {
 
     useEffect (()=>{
     new Promise((resolve) => {
-        setTimeout(()=>resolve(elementos), 2000)})
+        setTimeout(()=>resolve(data), 2000)})
 .then (response => {
     const finded =response.find(i=>i.id===Number(id))
 if (finded) {

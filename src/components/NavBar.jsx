@@ -12,17 +12,17 @@ export const NavBar = () => {
             <img src="../img/logo-gray.jpg" alt="" className="logo"/>
             <p>Adicto Tattoo</p>
             </h1>
-        <navBar>
-            <nav>
+        <NavBar>
+            <nav className="listaNav">
                 <NavLink to="/">
                     <span>Inicio</span>
                 </NavLink>
                 {[...uniqueCategories].map(category => (
                     <NavLink key={category} to={`/category/${category}`}><span>{category}</span> </NavLink>
                 ))}
-                <NavLink to ="/cartWidget"><CartWidget></CartWidget></NavLink>
+                <NavLink to ="/cartWidget"><CartWidget /></NavLink>
             </nav>
-        </navBar>
+        </NavBar>
     </div>
     )
 };
