@@ -12,8 +12,8 @@ export const ItemContainerDetail = () => {
     new Promise((resolve) => {
         setTimeout(()=>resolve(data), 2000)})
 .then (response => {
-    const finded =response.find(i=>i.id===Number(id))
-if (finded) {
+    const found =response.find(i=>i.id===Number(id))
+if (found) {
     setProduct(finded)
 }
 else{
