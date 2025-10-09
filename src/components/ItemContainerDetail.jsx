@@ -14,7 +14,7 @@ export const ItemContainerDetail = () => {
 .then (response => {
     const found =response.find(i=>i.id===Number(id))
 if (found) {
-    setProduct(finded)
+    setProduct(found)
 }
 else{
     alert ("No existe")
