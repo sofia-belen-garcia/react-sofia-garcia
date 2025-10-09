@@ -29,7 +29,7 @@ function App() {
           <Route path="/detail/:id" element= {<ItemContainerDetail />} />
           <Route path="*" element= {<Error404 />} />
         </Routes>
-      </BrowserRouter>
+      
       <main>
         <Container mensaje="Bienvenidx a nuestro catálogo!"></Container>
         <ItemListContainer
@@ -37,6 +37,7 @@ function App() {
           elementos={elementos}
         ></ItemListContainer>
       </main>
+        </BrowserRouter>
     </>
   );
 }
