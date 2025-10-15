@@ -24,4 +24,13 @@ else{
 })
 .finally(()=>setLoading(false))
 }, [id]);
+
+return (
+    <div>
+        <h2>{product.nombre}</h2>
+        <img src={product.img} alt={product.nombre} />
+        <p>${product.precio}</p>
+    </div>
+)
 }
+

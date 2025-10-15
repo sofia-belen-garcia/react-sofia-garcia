@@ -19,17 +19,15 @@ function App() {
       });
   }, []);
   return (
-
     <>
       <BrowserRouter>
         <NavBar />
         <Routes>
           <Route path="/" element= {<Inicio />} />
-          <Route path="/category/:categoryId" element= {<Inicio />} />
+          <Route path="/category/:categoryId" element= {<ItemListContainer />} />
           <Route path="/detail/:id" element= {<ItemContainerDetail />} />
           <Route path="*" element= {<Error404 />} />
         </Routes>
-      
       <main>
         <Container mensaje="Bienvenidx a nuestro catálogo!"></Container>
         <ItemListContainer
@@ -37,7 +35,7 @@ function App() {
           elementos={elementos}
         ></ItemListContainer>
       </main>
-        </BrowserRouter>
+</BrowserRouter>
     </>
   );
 }

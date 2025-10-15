@@ -6,32 +6,32 @@ import elementos from "../../public/elementos.json";
 export const ItemListContainer = (props) => {
     const [products, setProducts] =useState ([]);
     const [loading, setLoading] =useState (true);
-    const {id} =useParams();
+    const {categoryId} =useParams();
 
     useEffect (()=>{
         new Promise((resolve) => {
             setTimeout(()=>resolve(elementos), 2000);
         })
         .then (response=>{
-            if(!id){
+            if(!categoryId){
                 setProducts(response)
             console.log(products)}
             
             else{
                 const filtered = response.filter(
-                    i=> i.category ===id)
+                    i=> i.category ===categoryId)
                     setProducts(filtered)
             }}
         )
         .finally(()=>setLoading(false))
-    }, [id]);
+    }, [categoryId]);
     if(loading) return "Wait"
     return(
         <>
         <div>
             <h3>{props.mensaje}</h3>
                 <ul className="card">
-                    {props.elementos.map((elemento)=>(      
+                    {products.map((elemento)=>(      
                     <li key={elemento.id} className="li">
                         <img src={elemento.img} alt={elemento.nombre} className="img-card"/>
                         <h4>{elemento.nombre}</h4>
