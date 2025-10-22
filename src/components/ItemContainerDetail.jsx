@@ -27,11 +27,14 @@ useEffect(() => {
 }, [detailId]);
 
 return (
-    <div>
-    <h2>{product.nombre}</h2>
-    <img src={product.img} alt={product.nombre} />
-    <p>{product.detail}</p>
-    <small>${product.costo}</small>
-    </div>
+    product ? (
+    <div className="li">
+        <h2>{product.nombre}</h2>
+        <img src={product.img} alt={product.nombre} className="img"/>
+        <p>{product.detail}</p>
+        <small>${product.costo}</small>
+    </div> )
+    :
+    <p>wait...</p>
 );
 };

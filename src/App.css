@@ -71,6 +71,11 @@ h3{
   width: auto;
 }
 
+.img{
+  height: 300px;
+  width: auto;
+}
+
 .card{
   list-style-type: none;
   margin: 15px;
@@ -96,6 +101,10 @@ h3{
 
 .li-button{
   margin-bottom: 20px;
+  color: wheat;
+}
+.li-button:hover{
+  color: black;
 }
 
 .img-card{
