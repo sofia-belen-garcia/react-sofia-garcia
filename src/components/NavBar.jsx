@@ -13,7 +13,6 @@ export const NavBar = () => {
         .then((response) => response.json())
         .then((data) => {
             setElementos(data);
-            console.log(elementos);
         });
     }, []);
     return(

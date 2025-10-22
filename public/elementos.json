@@ -4,6 +4,7 @@
         "costo":10000,
         "img":"../img/tragus.jpg",
         "category": "oreja",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":1
         
     },
@@ -12,6 +13,7 @@
         "costo":10500,
         "img":"../img/daith.jpg",
         "category": "oreja",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":2
     },
         {
@@ -19,6 +21,7 @@
         "costo":10500,
         "img":"../img/forward.jpg",
         "category": "oreja",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":3
     },
         {
@@ -26,6 +29,7 @@
         "costo":10500,
         "img":"../img/rook.jpg",
         "category": "oreja",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":4
     },
         {
@@ -33,6 +37,7 @@
         "costo":10000,
         "img":"../img/flat.jpg",
         "category": "oreja",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":5
     },
         {
@@ -40,6 +45,7 @@
         "costo":12000,
         "img":"../img/industrial.jpg",
         "category": "oreja",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":6
     },
         {
@@ -47,6 +53,7 @@
         "costo":10000,
         "img":"../img/helix.jpg",
         "category": "oreja",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":7
     },
         {
@@ -54,6 +61,7 @@
         "costo":10000,
         "img":"../img/snug.jpg",
         "category": "oreja",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":8
     },
         {
@@ -61,6 +69,7 @@
         "costo":10000,
         "img":"../img/conch.jpg",
         "category": "oreja",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":9
     },
         {
@@ -68,6 +77,7 @@
         "costo":10000,
         "img":"../img/antitragus.jpg",
         "category": "oreja",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":10
     },
         {
@@ -75,6 +85,7 @@
         "costo":7000,
         "img":"../img/lobulo.jpg",
         "category": "oreja",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":11
     },
         {
@@ -82,6 +93,7 @@
         "costo":10000,
         "img":"../img/dahlia.jpg",
         "category": "bucales",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":12
     },
         {
@@ -89,6 +101,7 @@
         "costo":10000,
         "img":"../img/madonna.jpg",
         "category": "bucales",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":13
     },
         {
@@ -96,6 +109,7 @@
         "costo":10000,
         "img":"../img/smiley.jpg",
         "category": "bucales",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":14
     },
         {
@@ -103,6 +117,7 @@
         "costo":10000,
         "img":"../img/medusa.jpg",
         "category": "bucales",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":15
     },
         {
@@ -110,6 +125,7 @@
         "costo":10000,
         "img":"../img/monroe.jpg",
         "category": "bucales",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":16
     },
         {
@@ -117,6 +133,7 @@
         "costo":15000,
         "img":"../img/tounge.jpg",
         "category": "bucales",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":17
     },
         {
@@ -124,6 +141,7 @@
         "costo":10000,
         "img":"../img/labret.jpg",
         "category": "bucales",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":18
     },
         {
@@ -131,6 +149,7 @@
         "costo":16000,
         "img":"../img/snakebites.jpg",
         "category": "bucales",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":19
     },
         {
@@ -138,6 +157,7 @@
         "costo":10000,
         "img":"../img/eyebrow.jpg",
         "category": "faciales",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":20
     },
         {
@@ -145,6 +165,7 @@
         "costo":11000,
         "img":"../img/bridge.jpg",
         "category": "faciales",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":21
     },
         {
@@ -152,6 +173,7 @@
         "costo":30000,
         "img":"../img/surface.jpg",
         "category": "faciales",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":22
     },
         {
@@ -159,6 +181,7 @@
         "costo":10000,
         "img":"../img/nostril.jpg",
         "category": "faciales",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":23
     },
         {
@@ -166,6 +189,7 @@
         "costo":11000,
         "img":"../img/septum.jpg",
         "category": "faciales",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":24
     },
         {
@@ -173,6 +197,7 @@
         "costo":30000,
         "img":"../img/microdermal.jpg",
         "category": "faciales",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":25
     },
         {
@@ -180,6 +205,7 @@
         "costo":20000,
         "img":"../img/cheek.jpg",
         "category": "faciales",
+        "detail":"Perforación realizada con técnica esteril y aguja americana",
         "id":26
     },
         {
@@ -187,6 +213,7 @@
         "costo":100000,
         "img":"../img/anime.jpg",
         "category": "tattoo",
+        "detail":"Tatuaje realizado con material descartable",
         "id":27
     },
         {
@@ -194,6 +221,7 @@
         "costo":80000,
         "img":"../img/neotribal.jpg",
         "category": "tattoo",
+        "detail":"Tatuaje realizado con material descartable",
         "id":28
     },
         {
@@ -201,6 +229,7 @@
         "costo":120000,
         "img":"../img/cybersigilism.jpg",
         "category": "tattoo",
+        "detail":"Tatuaje realizado con material descartable",
         "id":29
     },
         {
@@ -208,6 +237,7 @@
         "costo":150000,
         "img":"../img/fullcolor.jpg",
         "category": "tattoo",
+        "detail":"Tatuaje realizado con material descartable",
         "id":30
     },
         {
@@ -215,6 +245,7 @@
         "costo":120000,
         "img":"../img/tribal.jpg",
         "category": "tattoo",
+        "detail":"Tatuaje realizado con material descartable",
         "id":31
     },
         {
@@ -222,6 +253,7 @@
         "costo":80000,
         "img":"../img/blackwork.jpg",
         "category": "tattoo",
+        "detail":"Tatuaje realizado con material descartable",
         "id":32
     },
         {
@@ -229,6 +261,7 @@
         "costo":90000,
         "img":"../img/byg.jpg",
         "category": "tattoo",
+        "detail":"Tatuaje realizado con material descartable",
         "id":33
     },
         {
@@ -236,6 +269,7 @@
         "costo":25000,
         "img":"../img/lineal.jpg",
         "category": "tattoo",
+        "detail":"Tatuaje realizado con material descartable",
         "id":34
     }
 ]

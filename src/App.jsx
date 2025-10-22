@@ -25,17 +25,15 @@ function App() {
         <Routes>
           <Route path="/" element= {<Inicio />} />
           <Route path="/category/:categoryId" element= {<ItemListContainer />} />
-          <Route path="/detail/:id" element= {<ItemContainerDetail />} />
+          <Route path="/detail/:detailId" element= {<ItemContainerDetail />} />
           <Route path="*" element= {<Error404 />} />
         </Routes>
-      <main>
         <Container mensaje="Bienvenidx a nuestro catálogo!"></Container>
         <ItemListContainer
           mensaje="Agregá algún producto"
           elementos={elementos}
         ></ItemListContainer>
-      </main>
-</BrowserRouter>
+      </BrowserRouter>
     </>
   );
 }

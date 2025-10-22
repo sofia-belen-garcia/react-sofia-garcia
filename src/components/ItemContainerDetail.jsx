@@ -1,36 +1,37 @@
-import { useEffect, useState } from "react"; 
-import data from "../../public/elementos.json"
+import { useEffect, useState } from "react";
+import elementos from "../../public/elementos.json";
+import { BrowserRouter } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
 export const ItemContainerDetail = () => {
+const [product, setProduct] = useState(null);
+const [loading, setLoading] = useState(true);
+const { detailId } = useParams();
 
-    const [product, setProduct] =useState(null);
-    const [loading, setLoading]= useState (true);
-    const {id} = useParams ()
-
-    useEffect (()=>{
-    new Promise((resolve) => {
-        setTimeout(()=>resolve(data), 2000)})
-.then (response => {
-    const found =response.find(i=>i.id===Number(id))
-if (found) {
-    setProduct(found)
-}
-else{
-    alert ("No existe")
-    console.log(loading)
-    console.log(product)
-}
-})
-.finally(()=>setLoading(false))
-}, [id]);
+useEffect(() => {
+    new Promise((resolve, rejected) => {
+    setTimeout(() => resolve(elementos), 2000);
+    })
+    .then((response) => {
+        const found = response.find((i) => i.id === Number(detailId));
+        if (!found) {
+            setProduct(response)
+        }
+        else if (found) {
+        setProduct(found);
+        } else {
+        alert("No existe");
+        }
+    })
+    .finally(() => setLoading(false));
+}, [detailId]);
 
 return (
     <div>
-        <h2>{product.nombre}</h2>
-        <img src={product.img} alt={product.nombre} />
-        <p>${product.precio}</p>
+    <h2>{product.nombre}</h2>
+    <img src={product.img} alt={product.nombre} />
+    <p>{product.detail}</p>
+    <small>${product.costo}</small>
     </div>
-)
-}
-
+);
+};

@@ -1,6 +1,6 @@
 function Inicio() {
     return (
-        <h2 className="inicio">Bienvenidx a Adicto Tattoo</h2>
+        <h2>Bienvenidx a Adicto Tattoo</h2>
     )
 }
 

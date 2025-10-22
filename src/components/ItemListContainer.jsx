@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import elementos from "../../public/elementos.json";
+import { ItemContainerDetail } from "./ItemContainerDetail";
 
 export const ItemListContainer = (props) => {
     const [products, setProducts] =useState ([]);
@@ -9,13 +10,12 @@ export const ItemListContainer = (props) => {
     const {categoryId} =useParams();
 
     useEffect (()=>{
-        new Promise((resolve) => {
+        new Promise((resolve, rejected) => {
             setTimeout(()=>resolve(elementos), 2000);
         })
         .then (response=>{
             if(!categoryId){
-                setProducts(response)
-            console.log(products)}
+                setProducts(response)}
             
             else{
                 const filtered = response.filter(
@@ -39,7 +39,7 @@ export const ItemListContainer = (props) => {
                         <span>categoría: {elemento.category}</span>
                         <small>producto número: {elemento.id}</small>
                         <br />
-                        <button className="li-button">Ver más</button>
+                        <Link to={`/detail/${elemento.id}`} className="li-button">Ver más</Link>
                     </li>))}
                 </ul>
         </div>
