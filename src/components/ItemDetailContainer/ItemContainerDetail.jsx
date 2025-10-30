@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import elementos from "../../public/elementos.json";
 import { BrowserRouter } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import { getFirestore, doc, getDoc } from "firebase/firestore";
+import {ItemDetail} from "./ItemDetail"
 
 export const ItemContainerDetail = () => {
 const [product, setProduct] = useState(null);
@@ -9,22 +10,16 @@ const [loading, setLoading] = useState(true);
 const { detailId } = useParams();
 
 useEffect(() => {
-    new Promise((resolve, rejected) => {
-    setTimeout(() => resolve(elementos), 2000);
-    })
-    .then((response) => {
-        const found = response.find((i) => i.id === Number(detailId));
-        if (!found) {
-            setProduct(response)
-        }
-        else if (found) {
-        setProduct(found);
-        } else {
-        alert("No existe");
-        }
-    })
-    .finally(() => setLoading(false));
-}, [detailId]);
+    const db= getFirestore()
+    const refDoc =doc(db,"items", categoryId)
+
+    getDoc(refDoc)
+    .then(snapshot=>setProduct({id:snapshot.id, ...snapshot.data()}))
+}, [categoryId])
+if (loading) {
+    return (<p>Loading</p>)
+    setLoading(false)
+}
 
 return (
     product ? (
@@ -35,6 +30,6 @@ return (
         <small>${product.costo}</small>
     </div> )
     :
-    <p>wait...</p>
+    <p>No se encontró el producto</p>
 );
 };
