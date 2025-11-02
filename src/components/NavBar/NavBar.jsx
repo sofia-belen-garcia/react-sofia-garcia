@@ -37,7 +37,7 @@ export const NavBar = () => {
                     <span>Inicio</span>
                 </NavLink>
                 {[...uniqueCategories].map(categoryId => (
-                    <NavLink key={`${category}`} to={`/categoryId/${categoryId}`}><span>{categoryId}</span> </NavLink>
+                <NavLink key={`${categoryId}`} to={`/category/${categoryId}`}><span>{categoryId}</span> </NavLink>
                 ))}
                 <NavLink to ="/cartWidget"><CartWidget /></NavLink>
             </nav>
