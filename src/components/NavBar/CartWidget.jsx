@@ -9,10 +9,9 @@ export const CartWidget = () => {
     const totalQuantity = () => productosAgregados ? productosAgregados.reduce ((acc, valorActual)=>acc+valorActual.quantity, 0) :0
 
     return(
-        !!totalQuantity() && (
-            <Link to="/CartItem">
+        !!totalQuantity () && (
+                    <Link to="/CartItem">
                 <CartItem></CartItem>
-            </Link>
-        )
+            </Link>)
 )
 };
