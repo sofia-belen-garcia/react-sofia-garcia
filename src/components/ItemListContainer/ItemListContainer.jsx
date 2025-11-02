@@ -6,7 +6,7 @@ import { getFirestore, getDocs, collection, query, where } from "firebase/firest
 import { Item } from "./Item";
 
 
-export const ItemListContainer = (props) => {
+export const ItemListContainer = ({mensaje}) => {
     const [list, setList]=useState([])
     const [products, setProducts] =useState ([]);
     const [loading, setLoading] =useState (true);
@@ -35,11 +35,11 @@ export const ItemListContainer = (props) => {
     return(
         <>
         <div>
-            <h3>{props.mensaje}</h3>
+            <h3>{mensaje}</h3>
                 <ul className="card">
                     {products.map((elemento)=>(      
                     <li key={elemento.id} className="li">
-                        <Item item={elemento}></Item>
+                        <Item item={elemento} title="texto" />
                         {/* <img src={elemento.img} alt={elemento.nombre} className="img-card"/>
                         <h4>{elemento.nombre}</h4>
                         <span>${elemento.costo}</span>
