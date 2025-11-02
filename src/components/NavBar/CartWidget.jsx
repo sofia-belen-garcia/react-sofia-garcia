@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { CartContext } from "../Context/CartContex";
 import { Link } from "react-router-dom";
-
+import {CartItem} from "../cart/CartItem"
 
 export const CartWidget = () => {
     const {productosAgregados} = useContext(CartContext)
@@ -10,12 +10,8 @@ export const CartWidget = () => {
 
     return(
         !!totalQuantity() && (
-            <Link to="/cart">
-                <div>
-                    <img src="../../img/cart.png" alt="carrito" className="cartImg" />
-                    <span>{totalQuantity()}</span>
-                </div>
-                <button>Terminar compra</button>
+            <Link to="/CartItem">
+                <CartItem></CartItem>
             </Link>
         )
 )

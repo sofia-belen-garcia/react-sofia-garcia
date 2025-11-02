@@ -8,6 +8,8 @@ import {ItemContainerDetail} from "./components/ItemDetailContainer/ItemContaine
 import Inicio from "./components/Inicio";
 import { Error404 } from "./components/Error404";
 import { getFirestore, getDoc, doc } from "firebase/firestore";
+import { CartItem } from "./components/cart/CartItem";
+import { CartWidget } from "./components/NavBar/CartWidget";
 
 function App() {
   const db=getFirestore()
@@ -17,15 +19,6 @@ function App() {
     return ({...snapshot.data(), id:snapshot.id})
   })
 
-  // const [elementos, setElementos] = useState([]);
-  // useEffect(() => {
-  //   fetch("../public/elementos.json")
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       setElementos(data);
-  //       console.log(data);
-  //     });
-  // }, []);
   return (
     <>
       <BrowserRouter>
@@ -34,6 +27,7 @@ function App() {
           <Route path="/" element= {<Inicio />} />
           <Route path="/category/:categoryId" element= {<ItemListContainer />} />
           <Route path="/detail/:detailId" element= {<ItemContainerDetail />} />
+          <Route path="/CartWidget" element={<CartWidget />} />
           <Route path="*" element= {<Error404 />} />
         </Routes>
         <Container mensaje="Bienvenidx a nuestro catálogo!"></Container>

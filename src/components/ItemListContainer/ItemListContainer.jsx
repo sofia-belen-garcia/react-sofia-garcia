@@ -39,14 +39,7 @@ export const ItemListContainer = ({mensaje}) => {
                 <ul className="card">
                     {products.map((elemento)=>(      
                     <li key={elemento.id} className="li">
-                        <Item item={elemento} title="texto" />
-                        {/* <img src={elemento.img} alt={elemento.nombre} className="img-card"/>
-                        <h4>{elemento.nombre}</h4>
-                        <span>${elemento.costo}</span>
-                        <span>categoría: {elemento.categoryId}</span>
-                        <small>producto número: {elemento.id}</small>
-                        <br />
-                        <Link to={`/detail/${elemento.id}`} className="li-button">Ver más</Link> */}
+                        <Item item={elemento} />
                     </li>))}
                 </ul>
         </div>

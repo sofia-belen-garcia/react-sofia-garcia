@@ -40,6 +40,7 @@ export const CartItem= () => {
     )
 
     return (
+        <>
         <Container>
             <h2>Lista de productos</h2>
             {!productosAgregados.length ? (
@@ -92,5 +93,6 @@ export const CartItem= () => {
                 </div>
             )}
         </Container>
+        </>
     )
 }

@@ -17,7 +17,7 @@ export const Item = ({item}) => {
         <div className="li">
             <h3>{item.nombre}</h3>
             <p>Categoría: {item.categoryId}</p>
-            <Link to={`/detail/:${item.id}`}>
+            <Link to={`/detail/${item.id}`}>
                 <button variant="primary">Ver más</button>
             </Link>
             <mark>Stock: {item.stock}</mark>
