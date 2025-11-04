@@ -10,8 +10,8 @@ export const CartWidget = () => {
 
     return(
         !!totalQuantity () && (
-                    <Link to="/CartItem">
-                <CartItem></CartItem>
+                    <Link to="/cart">
+                {totalQuantity ()}
             </Link>)
 )
 };

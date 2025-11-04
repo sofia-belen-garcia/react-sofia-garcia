@@ -10,6 +10,8 @@ import { Error404 } from "./components/Error404";
 import { getFirestore, getDoc, doc } from "firebase/firestore";
 import { CartItem } from "./components/cart/CartItem";
 import { CartWidget } from "./components/NavBar/CartWidget";
+import { CartProvider } from "./components/Context/CartContex";
+import { UseCart } from "./components/Context/UseCart";
 
 function App() {
   const db=getFirestore()
@@ -21,13 +23,15 @@ function App() {
 
   return (
     <>
+
       <BrowserRouter>
+          <CartProvider>
         <NavBar />
         <Routes>
           <Route path="/" element= {<Inicio />} />
           <Route path="/category/:categoryId" element= {<ItemListContainer />} />
           <Route path="/detail/:detailId" element= {<ItemContainerDetail />} />
-          <Route path="/CartWidget" element={<CartWidget />} />
+          <Route path="/cart" element={<CartItem />} />
           <Route path="*" element= {<Error404 />} />
         </Routes>
         <Container mensaje="Bienvenidx a nuestro catálogo!"></Container>
@@ -35,7 +39,9 @@ function App() {
           mensaje="Agregá algún producto"
           elementos={db}
         ></ItemListContainer>
+              </CartProvider>
       </BrowserRouter>
+
     </>
   );
 }

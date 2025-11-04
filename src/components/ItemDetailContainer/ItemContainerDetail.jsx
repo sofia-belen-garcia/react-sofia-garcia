@@ -2,14 +2,17 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 import {ItemDetail} from "./ItemDetail"
-import { CartContext } from "../Context/CartContex";
+import { CartContext, useCart } from "../Context/CartContex";
 import { UseCart } from "../Context/UseCart";
 
 export const ItemContainerDetail = () => {
 const [product, setProduct] = useState(null);
 const [loading, setLoading] = useState(true);
-const {addItem, removeItem, cart} = UseCart()
 const { detailId } = useParams();
+
+const {productosAgregados, addItem, deleteItem}= useCart()
+
+
 
 useEffect(() => {
     const db= getFirestore()
@@ -21,6 +24,12 @@ useEffect(() => {
 }
 , [detailId])
 if(loading){return(<p>Loading...</p>)}
+const cartItem=productosAgregados.find((item)=>item.id===product.id)
+const quantityCart=cartItem ? cartItem.quantity :0
+
+const stockDispo=product.stock - quantityCart
+
+
 
 return ((product) ? (
         <div className="li">
@@ -28,9 +37,12 @@ return ((product) ? (
         <img src={product.img} alt={product.nombre} className="img"/>
         <p>{product.detail}</p>
         <small>${product.costo}</small>
-        <mark>stock: {product.stock}</mark>
-        <button onClick={()=> addItem(product)}>+1</button>
-        <button onClick={()=> removeItem (product.id)}>-1</button>
+        <mark>stock: {  stockDispo}</mark>
+        <div>
+            <button onClick={()=> addItem(product, 1)} disabled={quantityCart>= product.stock}>+1</button>
+            <span>{quantityCart}</span>
+            <button onClick={()=> deleteItem (product.id)} disabled={quantityCart===0}>-1</button>
+        </div>
     </div> )
     :
     <p>No se encontró el producto</p>

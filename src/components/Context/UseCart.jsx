@@ -6,7 +6,7 @@ export const UseCart = () =>{
     const addItem=(producto, quantity)=>{
         const {stock, ... rest } = producto
         const alreadyExists= productosAgregados.some(
-            ( producto )= producto.id === rest.id
+            ( producto )=> producto.id === rest.id
         )
         if (!alreadyExists){
             setProductosAgregados(prev=>[...prev, {...rest, quantity}, ])
